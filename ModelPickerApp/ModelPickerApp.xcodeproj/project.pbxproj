@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5A7183F62629BA41000C9621 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183EF2629BA3F000C9621 /* tv_retro.usdz */; };
-		5A7183F72629BA41000C9621 /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F02629BA3F000C9621 /* toy_car.usdz */; };
 		5A7183F82629BA41000C9621 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F12629BA40000C9621 /* gramophone.usdz */; };
 		5A7183F92629BA41000C9621 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F22629BA40000C9621 /* toy_biplane.usdz */; };
-		5A7183FA2629BA41000C9621 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F32629BA40000C9621 /* cup_saucer_set.usdz */; };
 		5A7183FB2629BA41000C9621 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F42629BA40000C9621 /* teapot.usdz */; };
-		5A7183FC2629BA41000C9621 /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F52629BA41000C9621 /* toy_drummer.usdz */; };
 		5AEB179C2629B3AB00D39803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB179B2629B3AB00D39803 /* AppDelegate.swift */; };
 		5AEB179E2629B3AB00D39803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB179D2629B3AB00D39803 /* ContentView.swift */; };
 		5AEB17A02629B3AB00D39803 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB179F2629B3AB00D39803 /* Experience.rcproject */; };
@@ -43,12 +40,9 @@
 
 /* Begin PBXFileReference section */
 		5A7183EF2629BA3F000C9621 /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
-		5A7183F02629BA3F000C9621 /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
 		5A7183F12629BA40000C9621 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		5A7183F22629BA40000C9621 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
-		5A7183F32629BA40000C9621 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
 		5A7183F42629BA40000C9621 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
-		5A7183F52629BA41000C9621 /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
 		5AEB17982629B3AB00D39803 /* ModelPickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEB179B2629B3AB00D39803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEB179D2629B3AB00D39803 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,9 +91,6 @@
 				5A7183EF2629BA3F000C9621 /* tv_retro.usdz */,
 				5A7183F12629BA40000C9621 /* gramophone.usdz */,
 				5A7183F42629BA40000C9621 /* teapot.usdz */,
-				5A7183F32629BA40000C9621 /* cup_saucer_set.usdz */,
-				5A7183F02629BA3F000C9621 /* toy_car.usdz */,
-				5A7183F52629BA41000C9621 /* toy_drummer.usdz */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,10 +264,7 @@
 				5A7183F82629BA41000C9621 /* gramophone.usdz in Resources */,
 				5AEB17A52629B3AC00D39803 /* Preview Assets.xcassets in Resources */,
 				5A7183F62629BA41000C9621 /* tv_retro.usdz in Resources */,
-				5A7183FC2629BA41000C9621 /* toy_drummer.usdz in Resources */,
-				5A7183FA2629BA41000C9621 /* cup_saucer_set.usdz in Resources */,
 				5AEB17A22629B3AC00D39803 /* Assets.xcassets in Resources */,
-				5A7183F72629BA41000C9621 /* toy_car.usdz in Resources */,
 				5A7183F92629BA41000C9621 /* toy_biplane.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
