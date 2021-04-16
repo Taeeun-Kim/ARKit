@@ -93,13 +93,13 @@
 		5A7183EE2629B9D2000C9621 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5A7183F32629BA40000C9621 /* cup_saucer_set.usdz */,
+				5A7183F22629BA40000C9621 /* toy_biplane.usdz */,
+				5A7183EF2629BA3F000C9621 /* tv_retro.usdz */,
 				5A7183F12629BA40000C9621 /* gramophone.usdz */,
 				5A7183F42629BA40000C9621 /* teapot.usdz */,
-				5A7183F22629BA40000C9621 /* toy_biplane.usdz */,
+				5A7183F32629BA40000C9621 /* cup_saucer_set.usdz */,
 				5A7183F02629BA3F000C9621 /* toy_car.usdz */,
 				5A7183F52629BA41000C9621 /* toy_drummer.usdz */,
-				5A7183EF2629BA3F000C9621 /* tv_retro.usdz */,
 			);
 			path = Models;
 			sourceTree = "<group>";
