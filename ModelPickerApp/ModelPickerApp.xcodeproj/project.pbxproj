@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A530755262A072300E848EF /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5A530754262A072300E848EF /* FocusEntity */; };
 		5A7183F62629BA41000C9621 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183EF2629BA3F000C9621 /* tv_retro.usdz */; };
 		5A7183F82629BA41000C9621 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F12629BA40000C9621 /* gramophone.usdz */; };
 		5A7183F92629BA41000C9621 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F22629BA40000C9621 /* toy_biplane.usdz */; };
@@ -67,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A530755262A072300E848EF /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +175,6 @@
 			dependencies = (
 			);
 			name = ModelPickerApp;
-			packageProductDependencies = (
-				5A530754262A072300E848EF /* FocusEntity */,
-			);
 			productName = ModelPickerApp;
 			productReference = 5AEB17982629B3AB00D39803 /* ModelPickerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -251,9 +246,6 @@
 				Base,
 			);
 			mainGroup = 5AEB178F2629B3AB00D39803;
-			packageReferences = (
-				5A530753262A072300E848EF /* XCRemoteSwiftPackageReference "FocusEntity" */,
-			);
 			productRefGroup = 5AEB17992629B3AB00D39803 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -633,25 +625,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5A530753262A072300E848EF /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5A530754262A072300E848EF /* FocusEntity */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5A530753262A072300E848EF /* XCRemoteSwiftPackageReference "FocusEntity" */;
-			productName = FocusEntity;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AEB17902629B3AB00D39803 /* Project object */;
 }
