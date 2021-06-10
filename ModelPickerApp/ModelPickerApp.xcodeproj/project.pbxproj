@@ -7,14 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A4A0D3E262AEE680047D1FD /* woman.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A0D3D262AEE680047D1FD /* woman.usdz */; };
-		5A4A0D4E262AF38B0047D1FD /* dragon.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A0D4D262AF38B0047D1FD /* dragon.usdz */; };
 		5A53075E262A0BE600E848EF /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5A53075D262A0BE600E848EF /* FocusEntity */; };
-		5A7183F62629BA41000C9621 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183EF2629BA3F000C9621 /* tv_retro.usdz */; };
 		5A7183F82629BA41000C9621 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F12629BA40000C9621 /* gramophone.usdz */; };
 		5A7183F92629BA41000C9621 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F22629BA40000C9621 /* toy_biplane.usdz */; };
 		5A7183FB2629BA41000C9621 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F42629BA40000C9621 /* teapot.usdz */; };
-		5A9A43F0262B042700C31F0B /* gazua.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9A43EF262B042700C31F0B /* gazua.usdz */; };
+		5AA877B82672474C005A6A56 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5AA877B72672474C005A6A56 /* tv_retro.usdz */; };
 		5AAAD1342629FCF300C34ED8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAD1332629FCF300C34ED8 /* Model.swift */; };
 		5AEB179C2629B3AB00D39803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB179B2629B3AB00D39803 /* AppDelegate.swift */; };
 		5AEB179E2629B3AB00D39803 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB179D2629B3AB00D39803 /* ContentView.swift */; };
@@ -44,13 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A4A0D3D262AEE680047D1FD /* woman.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = woman.usdz; sourceTree = "<group>"; };
-		5A4A0D4D262AF38B0047D1FD /* dragon.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = dragon.usdz; sourceTree = "<group>"; };
-		5A7183EF2629BA3F000C9621 /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
 		5A7183F12629BA40000C9621 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		5A7183F22629BA40000C9621 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		5A7183F42629BA40000C9621 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
-		5A9A43EF262B042700C31F0B /* gazua.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gazua.usdz; sourceTree = "<group>"; };
+		5AA877B72672474C005A6A56 /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
 		5AAAD1332629FCF300C34ED8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5AEB17982629B3AB00D39803 /* ModelPickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEB179B2629B3AB00D39803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,11 +91,8 @@
 		5A7183EE2629B9D2000C9621 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5A9A43EF262B042700C31F0B /* gazua.usdz */,
-				5A4A0D4D262AF38B0047D1FD /* dragon.usdz */,
-				5A4A0D3D262AEE680047D1FD /* woman.usdz */,
+				5AA877B72672474C005A6A56 /* tv_retro.usdz */,
 				5A7183F22629BA40000C9621 /* toy_biplane.usdz */,
-				5A7183EF2629BA3F000C9621 /* tv_retro.usdz */,
 				5A7183F12629BA40000C9621 /* gramophone.usdz */,
 				5A7183F42629BA40000C9621 /* teapot.usdz */,
 			);
@@ -279,14 +270,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A4A0D4E262AF38B0047D1FD /* dragon.usdz in Resources */,
-				5A4A0D3E262AEE680047D1FD /* woman.usdz in Resources */,
-				5A9A43F0262B042700C31F0B /* gazua.usdz in Resources */,
+				5AA877B82672474C005A6A56 /* tv_retro.usdz in Resources */,
 				5A7183FB2629BA41000C9621 /* teapot.usdz in Resources */,
 				5AEB17A82629B3AC00D39803 /* LaunchScreen.storyboard in Resources */,
 				5A7183F82629BA41000C9621 /* gramophone.usdz in Resources */,
 				5AEB17A52629B3AC00D39803 /* Preview Assets.xcassets in Resources */,
-				5A7183F62629BA41000C9621 /* tv_retro.usdz in Resources */,
 				5AEB17A22629B3AC00D39803 /* Assets.xcassets in Resources */,
 				5A7183F92629BA41000C9621 /* toy_biplane.usdz in Resources */,
 			);
