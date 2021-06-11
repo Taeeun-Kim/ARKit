@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		5A16849826739C660009DAA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16849726739C660009DAA0 /* AppDelegate.swift */; };
 		5A16849A26739C660009DAA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16849926739C660009DAA0 /* ContentView.swift */; };
-		5A16849C26739C660009DAA0 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5A16849B26739C660009DAA0 /* Experience.rcproject */; };
 		5A16849E26739C670009DAA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A16849D26739C670009DAA0 /* Assets.xcassets */; };
 		5A1684A126739C670009DAA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1684A026739C670009DAA0 /* Preview Assets.xcassets */; };
 		5A1684A926739CC80009DAA0 /* newtons_cradle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A1684A826739CC80009DAA0 /* newtons_cradle.usdz */; };
+		5A2FFD5B2673F63200AE4F13 /* DrPepper.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FFD5A2673F63200AE4F13 /* DrPepper.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A16849426739C660009DAA0 /* 3DAnimatedObjectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DAnimatedObjectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A16849726739C660009DAA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A16849926739C660009DAA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5A16849B26739C660009DAA0 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		5A16849D26739C670009DAA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1684A026739C670009DAA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A1684A226739C670009DAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A1684A826739CC80009DAA0 /* newtons_cradle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = newtons_cradle.usdz; sourceTree = "<group>"; };
+		5A2FFD5A2673F63200AE4F13 /* DrPepper.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = DrPepper.rcproject; path = ../../../../../Downloads/DrPepper.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				5A16849726739C660009DAA0 /* AppDelegate.swift */,
 				5A16849926739C660009DAA0 /* ContentView.swift */,
-				5A16849B26739C660009DAA0 /* Experience.rcproject */,
 				5A1684A826739CC80009DAA0 /* newtons_cradle.usdz */,
+				5A2FFD5A2673F63200AE4F13 /* DrPepper.rcproject */,
 				5A16849D26739C670009DAA0 /* Assets.xcassets */,
 				5A1684A226739C670009DAA0 /* Info.plist */,
 				5A16849F26739C670009DAA0 /* Preview Content */,
@@ -145,9 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2FFD5B2673F63200AE4F13 /* DrPepper.rcproject in Sources */,
 				5A16849A26739C660009DAA0 /* ContentView.swift in Sources */,
 				5A16849826739C660009DAA0 /* AppDelegate.swift in Sources */,
-				5A16849C26739C660009DAA0 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

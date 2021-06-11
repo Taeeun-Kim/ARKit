@@ -19,24 +19,32 @@ struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         
         let arView = ARView(frame: .zero)
+//
+//        arView.environment.lighting.intensityExponent = 3
+//
+//        let newAnchor2: DrPepper.Scene!
+//
+//        newAnchor2 = try! DrPepper.loadScene()
+//
+//        newAnchor2.generateCollisionShapes(recursive: true)
+//
+//        arView.scene.anchors.append(newAnchor2)
         
-        arView.environment.lighting.intensityExponent = 3
-        
-        let newAnchor = AnchorEntity (world: .zero)
-        let newEnt = try! Entity.load(named: "newtons_cradle")
-        newAnchor.addChild(newEnt)
-        arView.scene.addAnchor(newAnchor)
-        
-        for anim in newEnt.availableAnimations {
-            newEnt.playAnimation(anim.repeat(duration:.infinity), transitionDuration: 1.25, startsPaused: false)
-        }
+//        let newAnchor = AnchorEntity (world: .zero)
+//        let newEnt = try! Entity.load(named: "newtons_cradle")
+//        newAnchor.addChild(newEnt)
+//        arView.scene.addAnchor(newAnchor)
+//
+//        for anim in newEnt.availableAnimations {
+//            newEnt.playAnimation(anim.repeat(duration:.infinity), transitionDuration: 1.25, startsPaused: false)
+//        }
 
         
         // Load the "Box" scene from the "Experience" Reality File
-//        let boxAnchor = try! Experience.loadBox()
+        let boxAnchor = try! DrPepper.loadScene()
         
         // Add the box anchor to the scene
-//        arView.scene.anchors.append(boxAnchor)
+        arView.scene.anchors.append(boxAnchor)
         
         return arView
         

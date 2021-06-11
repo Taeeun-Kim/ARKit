@@ -1,0 +1,274 @@
+{
+  "__content" : [
+    {
+      "scenes" : [
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "alignment" : "horizontal",
+                "name" : "surface"
+              },
+              "behaviors" : [
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "animationStyle" : "basic",
+                                          "duration" : 4.1315431594848633,
+                                          "emphasisAnimationType" : "flip",
+                                          "iterations" : 1,
+                                          "target" : [
+                                            "6EF60520-608C-4C63-AE29-2978924B9F20"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "emphasis"
+                                        }
+                                      },
+                                      "identifier" : "3F9C2833-2CDA-4918-A837-7D06361D50D4",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "1A25FD16-9F0A-4CED-9CA4-EF3964F4B231",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.364705890417099,
+                        0.74117648601531982,
+                        0.69019609689712524,
+                        1
+                      ],
+                      "identifier" : "897C8125-FE2E-460D-AB2B-8763B69190E1",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Behaviour",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+                                    "6EF60520-608C-4C63-AE29-2978924B9F20"
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "11FCB3E0-01A3-4D87-B41C-729EDBA9225A",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                }
+              ],
+              "gravity" : [
+                0,
+                -9.8000001907348633,
+                0
+              ],
+              "identifier" : "B2D9FA5B-D969-431F-88A6-D30F30267E12",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "3A24ED55-8055-4678-AFD0-306A51F95EE2" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "includeSceneScaling",
+                          {
+                            "typeName" : "Bool",
+                            "value" : false
+                          }
+                        ],
+                        [
+                          "subpath",
+                          {
+                            "typeName" : "String",
+                            "value" : ""
+                          }
+                        ],
+                        [
+                          "url",
+                          {
+                            "typeName" : "String",
+                            "value" : "model:89ad291a6e9580b1c24c8533ce5596bf\/drPepper.usdz"
+                          }
+                        ],
+                        [
+                          "withDescendants",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.af.FileImportAssetFactory",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "6EF60520-608C-4C63-AE29-2978924B9F20"
+                          }
+                        ],
+                        [
+                          "isAccessibilityEnabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : false
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ],
+                        [
+                          "rigidBody-material",
+                          {
+                            "typeName" : "RigidBodyMaterial",
+                            "value" : {
+                              "builtIn" : "lead",
+                              "overrides" : {
+
+                              }
+                            }
+                          }
+                        ],
+                        [
+                          "rigidBody-motionType",
+                          {
+                            "typeName" : "REMotionType",
+                            "value" : "dynamic"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0.29821023344993591,
+                        0.78847646713256836,
+                        -0.32613325119018555,
+                        1
+                      ]
+                    }
+                  }
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "Scene",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.98795568943023682,
+                  -1.0153172053106729e-10,
+                  0.15473714470863342,
+                  0,
+                  0.079329408705234528,
+                  0.85858446359634399,
+                  -0.50649732351303101,
+                  0,
+                  -0.13285492360591888,
+                  0.5126720666885376,
+                  0.84824347496032715,
+                  0,
+                  0.060886077582836151,
+                  0.8166959285736084,
+                  1.3042981624603271,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        }
+      ],
+      "tags" : {
+        "__content" : [
+          {
+            "tagsStore" : {
+
+            }
+          }
+        ],
+        "__version" : 1
+      }
+    }
+  ],
+  "__version" : 1
+}
