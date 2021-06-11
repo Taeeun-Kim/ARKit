@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A53075E262A0BE600E848EF /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5A53075D262A0BE600E848EF /* FocusEntity */; };
 		5A7183F82629BA41000C9621 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F12629BA40000C9621 /* gramophone.usdz */; };
 		5A7183F92629BA41000C9621 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F22629BA40000C9621 /* toy_biplane.usdz */; };
 		5A7183FB2629BA41000C9621 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F42629BA40000C9621 /* teapot.usdz */; };
+		5A936ADE26738D9600D52F7A /* Becherglas.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A936ADD26738D9600D52F7A /* Becherglas.usdz */; };
 		5AA877B82672474C005A6A56 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5AA877B72672474C005A6A56 /* tv_retro.usdz */; };
 		5AAAD1342629FCF300C34ED8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAD1332629FCF300C34ED8 /* Model.swift */; };
 		5AEB179C2629B3AB00D39803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB179B2629B3AB00D39803 /* AppDelegate.swift */; };
@@ -44,6 +44,7 @@
 		5A7183F12629BA40000C9621 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		5A7183F22629BA40000C9621 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		5A7183F42629BA40000C9621 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		5A936ADD26738D9600D52F7A /* Becherglas.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Becherglas.usdz; sourceTree = "<group>"; };
 		5AA877B72672474C005A6A56 /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
 		5AAAD1332629FCF300C34ED8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5AEB17982629B3AB00D39803 /* ModelPickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A53075E262A0BE600E848EF /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +94,7 @@
 				5AA877B72672474C005A6A56 /* tv_retro.usdz */,
 				5A7183F22629BA40000C9621 /* toy_biplane.usdz */,
 				5A7183F12629BA40000C9621 /* gramophone.usdz */,
+				5A936ADD26738D9600D52F7A /* Becherglas.usdz */,
 				5A7183F42629BA40000C9621 /* teapot.usdz */,
 			);
 			path = Models;
@@ -178,7 +179,6 @@
 			);
 			name = ModelPickerApp;
 			packageProductDependencies = (
-				5A53075D262A0BE600E848EF /* FocusEntity */,
 			);
 			productName = ModelPickerApp;
 			productReference = 5AEB17982629B3AB00D39803 /* ModelPickerApp.app */;
@@ -252,7 +252,6 @@
 			);
 			mainGroup = 5AEB178F2629B3AB00D39803;
 			packageReferences = (
-				5A53075C262A0BE600E848EF /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = 5AEB17992629B3AB00D39803 /* Products */;
 			projectDirPath = "";
@@ -273,6 +272,7 @@
 				5AA877B82672474C005A6A56 /* tv_retro.usdz in Resources */,
 				5A7183FB2629BA41000C9621 /* teapot.usdz in Resources */,
 				5AEB17A82629B3AC00D39803 /* LaunchScreen.storyboard in Resources */,
+				5A936ADE26738D9600D52F7A /* Becherglas.usdz in Resources */,
 				5A7183F82629BA41000C9621 /* gramophone.usdz in Resources */,
 				5AEB17A52629B3AC00D39803 /* Preview Assets.xcassets in Resources */,
 				5AEB17A22629B3AC00D39803 /* Assets.xcassets in Resources */,
@@ -633,26 +633,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5A53075C262A0BE600E848EF /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
-			requirement = {
-				kind = versionRange;
-				maximumVersion = 2.0.0;
-				minimumVersion = 1.1.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		5A53075D262A0BE600E848EF /* FocusEntity */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5A53075C262A0BE600E848EF /* XCRemoteSwiftPackageReference "FocusEntity" */;
-			productName = FocusEntity;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AEB17902629B3AB00D39803 /* Project object */;
 }
