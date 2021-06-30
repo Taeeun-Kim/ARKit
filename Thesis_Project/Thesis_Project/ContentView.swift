@@ -22,14 +22,13 @@ struct ContentView : View {
     var body: some View {
         NavigationView {
             ZStack{
-                Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
-                    .opacity(0.9)
+                Color.gray
                 
                 VStack{
-                    Image("test3")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .cornerRadius(15)
+                    //                    Image("test3")
+                    //                        .resizable()
+                    //                        .aspectRatio(contentMode: .fit)
+                    //                        .cornerRadius(15)
                     Text("Taeeun Kim")
                         .font(.system(size: 25))
                 }
@@ -85,22 +84,29 @@ struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         
         let arView = ARView(frame: .zero)
-//        let meshTest = MeshResource.generateSphere(radius: 30)
         
-//        let newAnchor = Entity.
+        // Load the "Box" scene from the "Experience" Reality File
+        let boxAnchor = try! Gazua.loadGo()
         
-        let modelEntity = ModelEntity(mesh: MeshResource.generateSphere(radius: 30))
+        // Add the box anchor to the scene
+        arView.scene.anchors.append(boxAnchor)
         
-        var material = SimpleMaterial()
-
-        material.color =  try! .init(tint: UIColor.blue, texture: MaterialParameters.Texture.init(TextureResource.load(named: "earth.jpg", in: Bundle.main)))
-        let anchorEntity = AnchorEntity()
-        anchorEntity.addChild(modelEntity.clone(recursive: true))
-        // 모델 추가 기능
+        //        let meshTest = MeshResource.generateSphere(radius: 30)
         
-        arView.scene.addAnchor(anchorEntity)
+        //        let newAnchor = Entity.
+        //
+        //        let modelEntity = ModelEntity(mesh: MeshResource.generateSphere(radius: 30))
+        //
+        //        var material = SimpleMaterial()
+        //
+        //        material.color =  try! .init(tint: UIColor.blue, texture: MaterialParameters.Texture.init(TextureResource.load(named: "earth.jpg", in: Bundle.main)))
+        //        let anchorEntity = AnchorEntity()
+        //        anchorEntity.addChild(modelEntity.clone(recursive: true))
+        //        // 모델 추가 기능
+        //
+        //        arView.scene.addAnchor(anchorEntity)
         
-//        entity.model?.mesh = newTextMesh
+        //        entity.model?.mesh = newTextMesh
         //        let boxNode = SCNNode(geometry: box)
         //        boxNode.position = SCNVector3(0, 0, -0.5)
         //        boxNode.geometry?.materials = [material]

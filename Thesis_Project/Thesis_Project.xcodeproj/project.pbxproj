@@ -13,6 +13,8 @@
 		5A5C75582686275600AED81E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C75572686275600AED81E /* Preview Assets.xcassets */; };
 		5A5C755F2686277E00AED81E /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C755E2686277E00AED81E /* earth.jpg */; };
 		5A5C7561268627F900AED81E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C7560268627F900AED81E /* DetailView.swift */; };
+		5A5F9B3C268BED2900DB86C7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5F9B3B268BED2900DB86C7 /* Storyboard.storyboard */; };
+		5A5F9B3E268BED9C00DB86C7 /* Gazua.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F9B3D268BED9C00DB86C7 /* Gazua.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,9 @@
 		5A5C75572686275600AED81E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A5C755E2686277E00AED81E /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		5A5C7560268627F900AED81E /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		5A5F9B3A268BECF400DB86C7 /* Thesis-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Thesis-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5A5F9B3B268BED2900DB86C7 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		5A5F9B3D268BED9C00DB86C7 /* Gazua.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = Gazua.rcproject; path = "../../../../3D Object/Gazua.rcproject"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +60,15 @@
 		5A5C754D2686275500AED81E /* Thesis_Project */ = {
 			isa = PBXGroup;
 			children = (
+				5A5F9B3A268BECF400DB86C7 /* Thesis-Project-Info.plist */,
 				5A5C754E2686275500AED81E /* AppDelegate.swift */,
 				5A5C75502686275500AED81E /* ContentView.swift */,
 				5A5C7560268627F900AED81E /* DetailView.swift */,
+				5A5F9B3D268BED9C00DB86C7 /* Gazua.rcproject */,
 				5A5C755E2686277E00AED81E /* earth.jpg */,
 				5A5C75542686275600AED81E /* Assets.xcassets */,
 				5A5C75562686275600AED81E /* Preview Content */,
+				5A5F9B3B268BED2900DB86C7 /* Storyboard.storyboard */,
 			);
 			path = Thesis_Project;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5C75582686275600AED81E /* Preview Assets.xcassets in Resources */,
+				5A5F9B3C268BED2900DB86C7 /* Storyboard.storyboard in Resources */,
 				5A5C75552686275600AED81E /* Assets.xcassets in Resources */,
 				5A5C755F2686277E00AED81E /* earth.jpg in Resources */,
 			);
@@ -145,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5C75512686275500AED81E /* ContentView.swift in Sources */,
+				5A5F9B3E268BED9C00DB86C7 /* Gazua.rcproject in Sources */,
 				5A5C7561268627F900AED81E /* DetailView.swift in Sources */,
 				5A5C754F2686275500AED81E /* AppDelegate.swift in Sources */,
 			);
@@ -280,9 +290,15 @@
 				DEVELOPMENT_TEAM = P87BGS4HZC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Thesis-Project-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = Thesis_Project;
+				INFOPLIST_KEY_CFBundleName = Thesis_Project;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Storyboard;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -310,9 +326,15 @@
 				DEVELOPMENT_TEAM = P87BGS4HZC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Thesis-Project-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = Thesis_Project;
+				INFOPLIST_KEY_CFBundleName = Thesis_Project;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Storyboard;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
