@@ -24,29 +24,16 @@ struct ContentView : View {
                 VStack {
                     HStack {
                         Button(action: {}, label: {
-                            Text("3D Scan")
-                                .frame(width: Screen.height * 0.07, height: Screen.height * 0.07)
-                                .background(Color(red: 57 / 255, green: 63 / 255, blue: 84 / 255))
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
+                            MainButton(symbolName: "cube", text: "3D Scan")
                         })
                         Button(action: {}, label: {
-                            Text("Fotos")
-                                .frame(width: Screen.height * 0.07, height: Screen.height * 0.07)
-                                .background(Color(red: 57 / 255, green: 63 / 255, blue: 84 / 255))
-                                .cornerRadius(10)
+                            MainButton(symbolName: "camera", text: "Fotos")
                         })
                         Button(action: {}, label: {
-                            Text("Bauplan")
-                                .frame(width: Screen.height * 0.07, height: Screen.height * 0.07)
-                                .background(Color(red: 57 / 255, green: 63 / 255, blue: 84 / 255))
-                                .cornerRadius(10)
+                            MainButton(symbolName: "pencil", text: "Bauplan")
                         })
                         Button(action: {}, label: {
-                            Text("Dateien")
-                                .frame(width: Screen.height * 0.07, height: Screen.height * 0.07)
-                                .background(Color(red: 57 / 255, green: 63 / 255, blue: 84 / 255))
-                                .cornerRadius(10)
+                            MainButton(symbolName: "doc.badge.plus", text: "Dateien")
                         })
                     }
                     .frame(width: Screen.width, height: Screen.height * 0.4)
@@ -54,6 +41,27 @@ struct ContentView : View {
                 .background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
             }
         }
+    }
+}
+
+struct MainButton : View {
+    
+    var symbolName: String
+    var text: String
+    
+    var body: some View {
+        VStack {
+            Image(systemName: symbolName)
+                .font(.system(size: Screen.height * 0.025))
+                .frame(width: Screen.height * 0.035, height: Screen.height * 0.035)
+
+            Text(text)
+                .font(.system(size: Screen.height * 0.0125))
+        }
+        .frame(width: Screen.height * 0.07, height: Screen.height * 0.07)
+        .background(Color(red: 57 / 255, green: 63 / 255, blue: 84 / 255))
+        .foregroundColor(.white)
+        .cornerRadius(10)
     }
 }
 
