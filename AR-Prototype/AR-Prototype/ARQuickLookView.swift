@@ -13,6 +13,7 @@ struct ARQuickLookView: UIViewControllerRepresentable {
     // Properties: the file name (without extension), and whether we'll let
     // the user scale the preview content.
     var name: String
+    var usdzURL: String?
     var allowScaling: Bool = true
     
     func makeCoordinator() -> ARQuickLookView.Coordinator {
@@ -37,7 +38,7 @@ struct ARQuickLookView: UIViewControllerRepresentable {
     class Coordinator: NSObject, QLPreviewControllerDataSource {
         let parent: ARQuickLookView
         private lazy var fileURL: URL = Bundle.main.url(forResource: parent.name, withExtension: "usdz")!
-        
+
         init(_ parent: ARQuickLookView) {
             self.parent = parent
             super.init()
@@ -54,19 +55,21 @@ struct ARQuickLookView: UIViewControllerRepresentable {
             _ controller: QLPreviewController,
             previewItemAt index: Int
         ) -> QLPreviewItem {
+            
             guard let fileURL = Bundle.main.url(forResource: parent.name, withExtension: "usdz") else {
                 fatalError("Unable to load \(parent.name).usdz from main bundle")
             }
+           
+            print(fileURL)
             
-            let item = ARQuickLookPreviewItem(fileAt: fileURL)
+            let item = ARQuickLookPreviewItem(fileAt: URL(fileURLWithPath: parent.usdzURL!))
             item.allowsContentScaling = parent.allowScaling
             return item
         }
-    }
-}
-
-struct ARQuickLookView_Previews: PreviewProvider {
-    static var previews: some View {
-        ARQuickLookView(name: "MyScene")
+        
+        func documentDirectory() -> URL {
+          let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+          return documentsDirectory
+        }
     }
 }

@@ -13,15 +13,24 @@ import ARKit
 
 struct ContentView: View {
     
-    @State private var isPresented: Bool = false
-    @State private var usdzFile: String = "file:///private/var/mobile/Containers/Shared/AppGroup/51CEFFBD-5A42-429E-8068-D438E33A288E/File%20Provider%20Storage/Pflanze.usdz"
+    @State private var usdzURL: String = ""
+    @State private var usdzFile: String = "czech"
+    //    @State private var isPresented: Bool = false
+    @State var imported = false
+    @State var fileName = ""
+
     
     var body: some View {
         ZStack {
             
             VStack(spacing: 0) {
-                ARQuickLookView(name: usdzFile)
-                    .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
+                if usdzURL.isEmpty {
+                    ARQuickLookView(name: "czech", usdzURL: usdzURL)
+                        .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
+                } else {
+                    ARQuickLookView(name: "czech", usdzURL: usdzURL)
+                        .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
+                }
                 
                 Spacer()
                 
@@ -37,18 +46,40 @@ struct ContentView: View {
                             MainButton(symbolName: "pencil", text: "Bauplan")
                         })
                         Button(action: {
-                            isPresented = true
+//                            isPresented = true
+                            imported.toggle()
                         }, label: {
-                            MainButton(symbolName: "doc.badge.plus", text: "Dateien")
-                        })
-                        .fileImporter(isPresented: $isPresented, allowedContentTypes: [UTType.types(tag: "usdz", tagClass: .filenameExtension, conformingTo: nil).first!],
-                        onCompletion: { result in
-                            if let urls = try? result.get() {
-                                print(usdzFile)
-                                usdzFile = urls.absoluteString
-                                print(usdzFile)
+                            VStack {
+                                MainButton(symbolName: "doc.badge.plus", text: "Dateien")
+                                Text("file selected is \(fileName)")
                             }
                         })
+//                        .fileImporter(isPresented: $isPresented, allowedContentTypes: [UTType.types(tag: "usdz", tagClass: .filenameExtension, conformingTo: nil).first!],
+//                        onCompletion: { result in
+//                            if let urls = try? result.get() {
+//                                usdzURL = urls.absoluteString
+//                            }
+//                        })
+                        .fileImporter(isPresented: $imported, allowedContentTypes: [.usdz]) { res in
+                                    do {
+                                        let fileUrl = try res.get()
+                                        fileName = fileUrl.lastPathComponent // <--- the file name you want
+
+                                        let fileData = try Data(contentsOf: fileUrl)
+                                        let resourceDocPath = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last! as URL
+                                        let actualPath = resourceDocPath.appendingPathComponent("Prototype \(fileName)")
+                                        
+                                        do {
+                                            try fileData.write(to: actualPath)
+                                            print("usdz successfully saved!")
+                                        } catch {
+                                            print("usdz could not be saved")
+                                        }
+                                    } catch{
+                                        print ("error reading: \(error.localizedDescription)")
+                                    }
+                            
+                                }
                     }
                     .frame(width: Screen.width * 0.45)
                     .padding()
@@ -80,6 +111,39 @@ struct ContentView: View {
                 }
                 .frame(width: Screen.width, height: Screen.height * 0.4)
                 .background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
+            }
+        }
+    }
+    
+    func savePdf(urlString:String, fileName:String) {
+        DispatchQueue.main.async {
+            let url = URL(string: urlString)
+            let pdfData = try? Data.init(contentsOf: url!)
+            let resourceDocPath = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last! as URL
+            let pdfNameFromUrl = "Prototype-\(fileName).usdz"
+            let actualPath = resourceDocPath.appendingPathComponent(pdfNameFromUrl)
+            do {
+                try pdfData?.write(to: actualPath, options: .atomic)
+                print("pdf successfully saved!")
+            } catch {
+                print("Pdf could not be saved")
+            }
+        }
+    }
+    
+    func showSavedPdf(url:String, fileName:String) {
+        if #available(iOS 10.0, *) {
+            do {
+                let docURL = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+                let contents = try FileManager.default.contentsOfDirectory(at: docURL, includingPropertiesForKeys: [.fileResourceTypeKey], options: .skipsHiddenFiles)
+                for url in contents {
+                    if url.description.contains("\(fileName).pdf") {
+                        // its your file! do what you want with it!
+                        
+                    }
+                }
+            } catch {
+                print("could not locate pdf file !!!!!!!")
             }
         }
     }
@@ -127,25 +191,24 @@ struct subText : View {
     }
 }
 
-struct ARViewContainer: UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
-        return arView
-        
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {}
-    
-}
+//struct ARViewContainer: UIViewRepresentable {
+//
+//    func makeUIView(context: Context) -> ARView {
+//
+//        let arView = ARView(frame: .zero)
+//
+//        // Load the "Box" scene from the "Experience" Reality File
+//
+//        // Add the box anchor to the scene
+//        arView.scene.anchors.append(boxAnchor)
+//
+//        return arView
+//
+//    }
+//
+//    func updateUIView(_ uiView: ARView, context: Context) {}
+//
+//}
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
