@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A66AEE726CA54B4000A6604 /* Pflanze.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A66AEE626CA54B4000A6604 /* Pflanze.usdz */; };
 		5AD9FF2C26CA2FA500AAAD82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9FF2B26CA2FA500AAAD82 /* AppDelegate.swift */; };
 		5AD9FF2E26CA2FA500AAAD82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9FF2D26CA2FA500AAAD82 /* ContentView.swift */; };
 		5AD9FF3026CA2FA500AAAD82 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9FF2F26CA2FA500AAAD82 /* Experience.rcproject */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A66AEE626CA54B4000A6604 /* Pflanze.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Pflanze.usdz; sourceTree = "<group>"; };
 		5AD9FF2826CA2FA500AAAD82 /* AR-Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD9FF2B26CA2FA500AAAD82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AD9FF2D26CA2FA500AAAD82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				5AD9FF3626CA2FA600AAAD82 /* LaunchScreen.storyboard */,
 				5AD9FF4126CA31BC00AAAD82 /* test.usdz */,
 				5AD9FF4326CA323B00AAAD82 /* czech.usdz */,
+				5A66AEE626CA54B4000A6604 /* Pflanze.usdz */,
 				5AD9FF4526CA426400AAAD82 /* UIDevice+Extension.swift */,
 				5AD9FF3926CA2FA600AAAD82 /* Info.plist */,
 				5AD9FF3326CA2FA600AAAD82 /* Preview Content */,
@@ -148,6 +151,7 @@
 				5AD9FF3826CA2FA600AAAD82 /* LaunchScreen.storyboard in Resources */,
 				5AD9FF4226CA31BC00AAAD82 /* test.usdz in Resources */,
 				5AD9FF3526CA2FA600AAAD82 /* Preview Assets.xcassets in Resources */,
+				5A66AEE726CA54B4000A6604 /* Pflanze.usdz in Resources */,
 				5AD9FF3226CA2FA600AAAD82 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
