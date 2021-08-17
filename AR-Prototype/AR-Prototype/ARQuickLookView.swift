@@ -33,6 +33,8 @@ struct ARQuickLookView: UIViewControllerRepresentable {
     func updateUIViewController(_ controller: QLPreviewController,
                                 context: Context) {
         // nothing to do here
+//        let test = usdzURL
+//        print("업데이트 완료: \(test!)")
     }
     
     class Coordinator: NSObject, QLPreviewControllerDataSource {
@@ -62,8 +64,11 @@ struct ARQuickLookView: UIViewControllerRepresentable {
            
             print(fileURL)
             
-            let item = ARQuickLookPreviewItem(fileAt: URL(fileURLWithPath: parent.usdzURL!))
+            let item = ARQuickLookPreviewItem(fileAt: URL(fileURLWithPath: parent.usdzURL ?? ""))
             item.allowsContentScaling = parent.allowScaling
+            
+            print("실행됨")
+            
             return item
         }
         

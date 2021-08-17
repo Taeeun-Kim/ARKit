@@ -66,6 +66,7 @@
 			children = (
 				5AD9FF2B26CA2FA500AAAD82 /* AppDelegate.swift */,
 				5AD9FF2D26CA2FA500AAAD82 /* ContentView.swift */,
+				5AD9FF3F26CA315E00AAAD82 /* ARQuickLookView.swift */,
 				5AD9FF3126CA2FA600AAAD82 /* Assets.xcassets */,
 				5AD9FF3626CA2FA600AAAD82 /* LaunchScreen.storyboard */,
 				5AD9FF4126CA31BC00AAAD82 /* test.usdz */,
@@ -74,7 +75,6 @@
 				5AD9FF4526CA426400AAAD82 /* UIDevice+Extension.swift */,
 				5AD9FF3926CA2FA600AAAD82 /* Info.plist */,
 				5AD9FF3326CA2FA600AAAD82 /* Preview Content */,
-				5AD9FF3F26CA315E00AAAD82 /* ARQuickLookView.swift */,
 			);
 			path = "AR-Prototype";
 			sourceTree = "<group>";

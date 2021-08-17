@@ -10,27 +10,40 @@ import RealityKit
 import UIKit
 import QuickLook
 import ARKit
+import UniformTypeIdentifiers
+
+//class LocalFileManager {
+//    static let instance = LocalFileManager()
+//
+//    func saveUSDZ(usdz: URL, name: String) {
+//        guard let data = usdz.absoluteString else {
+//            print("Error")
+//            return
+//        }
+//
+//        let directory = FileManager.default.urls(for: <#T##FileManager.SearchPathDirectory#>, in: <#T##FileManager.SearchPathDomainMask#>)
+//    }
+//}
 
 struct ContentView: View {
     
-    @State private var usdzURL: String = ""
+    @State private var usdzURL: String = "czech"
     @State private var usdzFile: String = "czech"
-    //    @State private var isPresented: Bool = false
-    @State var imported = false
     @State var fileName = ""
-
+    @State var openFile = false
+    @State var saveFile = false
     
     var body: some View {
         ZStack {
             
             VStack(spacing: 0) {
-                if usdzURL.isEmpty {
-                    ARQuickLookView(name: "czech", usdzURL: usdzURL)
-                        .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
-                } else {
-                    ARQuickLookView(name: "czech", usdzURL: usdzURL)
-                        .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
-                }
+                //                if usdzURL.isEmpty {
+                ARQuickLookView(name: "czech", usdzURL: usdzURL)
+                    .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
+                //                } else {
+                //                    ARQuickLookView(name: "czech", usdzURL: usdzURL)
+                //                        .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
+                //                }
                 
                 Spacer()
                 
@@ -42,44 +55,44 @@ struct ContentView: View {
                         Button(action: {}, label: {
                             MainButton(symbolName: "camera", text: "Fotos")
                         })
-                        Button(action: {}, label: {
+                        Button(action: {
+                            saveFile.toggle()
+                        }, label: {
                             MainButton(symbolName: "pencil", text: "Bauplan")
                         })
                         Button(action: {
-//                            isPresented = true
-                            imported.toggle()
+                            //                            isPresented = true
+                            openFile.toggle()
                         }, label: {
                             VStack {
                                 MainButton(symbolName: "doc.badge.plus", text: "Dateien")
                                 Text("file selected is \(fileName)")
                             }
                         })
-//                        .fileImporter(isPresented: $isPresented, allowedContentTypes: [UTType.types(tag: "usdz", tagClass: .filenameExtension, conformingTo: nil).first!],
-//                        onCompletion: { result in
-//                            if let urls = try? result.get() {
-//                                usdzURL = urls.absoluteString
-//                            }
-//                        })
-                        .fileImporter(isPresented: $imported, allowedContentTypes: [.usdz]) { res in
+                        .fileImporter(isPresented: $openFile, allowedContentTypes: [.usdz]) { res in
+                            do {
+                                let fileUrl = try res.get()
+                                
+                                if fileUrl.startAccessingSecurityScopedResource() {
+                                    fileName = fileUrl.lastPathComponent // <--- the file name you want
+                                    let fileData = try Data(contentsOf: fileUrl)
+                                    let resourceDocPath = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last! as URL
+                                    let actualPath = resourceDocPath.appendingPathComponent("Kus_\(fileName)")
+                                    defer { fileUrl.stopAccessingSecurityScopedResource() }
                                     do {
-                                        let fileUrl = try res.get()
-                                        fileName = fileUrl.lastPathComponent // <--- the file name you want
-
-                                        let fileData = try Data(contentsOf: fileUrl)
-                                        let resourceDocPath = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last! as URL
-                                        let actualPath = resourceDocPath.appendingPathComponent("Prototype \(fileName)")
-                                        
-                                        do {
-                                            try fileData.write(to: actualPath)
-                                            print("usdz successfully saved!")
-                                        } catch {
-                                            print("usdz could not be saved")
-                                        }
-                                    } catch{
-                                        print ("error reading: \(error.localizedDescription)")
+                                        try fileData.write(to: actualPath)
+                                        print("usdz successfully saved!")
+                                    } catch {
+                                        print("usdz could not be saved")
                                     }
-                            
+                                    usdzURL = actualPath.absoluteString
+                                } else {
                                 }
+                            } catch{
+                                print ("error reading: \(error.localizedDescription)")
+                            }
+                            
+                        }
                     }
                     .frame(width: Screen.width * 0.45)
                     .padding()
@@ -120,7 +133,7 @@ struct ContentView: View {
             let url = URL(string: urlString)
             let pdfData = try? Data.init(contentsOf: url!)
             let resourceDocPath = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last! as URL
-            let pdfNameFromUrl = "Prototype-\(fileName).usdz"
+            let pdfNameFromUrl = "Prototype-\(fileName).pdf"
             let actualPath = resourceDocPath.appendingPathComponent(pdfNameFromUrl)
             do {
                 try pdfData?.write(to: actualPath, options: .atomic)
