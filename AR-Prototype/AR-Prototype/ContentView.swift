@@ -27,7 +27,7 @@ import UniformTypeIdentifiers
 
 struct ContentView: View {
     
-    @State private var usdzURL: String = "czech"
+    @State private var usdzURL: URL = URL(fileURLWithPath: "")
     @State private var usdzFile: String = "czech"
     @State var fileName = ""
     @State var openFile = false
@@ -38,8 +38,11 @@ struct ContentView: View {
             
             VStack(spacing: 0) {
                 //                if usdzURL.isEmpty {
-                ARQuickLookView(name: "czech", usdzURL: usdzURL)
-                    .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
+                if openFile == false {
+                    ARQuickLookView(name: "czech", usdzURL: usdzURL)
+                        .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
+
+                }
                 //                } else {
                 //                    ARQuickLookView(name: "czech", usdzURL: usdzURL)
                 //                        .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
@@ -85,7 +88,12 @@ struct ContentView: View {
                                     } catch {
                                         print("usdz could not be saved")
                                     }
-                                    usdzURL = actualPath.absoluteString
+                                    usdzURL = actualPath
+                                    print("saved url1: \(actualPath.absoluteURL)")
+//                                    print("saved url: \(actualPath.deletingLastPathComponent())")
+//                                    print("saved url: \(actualPath.path)")
+//                                    print("saved url: \(actualPath.standardizedFileURL)")
+//                                    print("saved url6: \(actualPath.relativePath)")
                                 } else {
                                 }
                             } catch{
