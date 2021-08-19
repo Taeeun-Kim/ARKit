@@ -12,19 +12,6 @@ import QuickLook
 import ARKit
 import UniformTypeIdentifiers
 
-//class LocalFileManager {
-//    static let instance = LocalFileManager()
-//
-//    func saveUSDZ(usdz: URL, name: String) {
-//        guard let data = usdz.absoluteString else {
-//            print("Error")
-//            return
-//        }
-//
-//        let directory = FileManager.default.urls(for: <#T##FileManager.SearchPathDirectory#>, in: <#T##FileManager.SearchPathDomainMask#>)
-//    }
-//}
-
 struct ContentView: View {
     
     @State private var usdzURL: URL = URL(fileURLWithPath: "")
@@ -37,25 +24,23 @@ struct ContentView: View {
         ZStack {
             
             VStack(spacing: 0) {
-                //                if usdzURL.isEmpty {
                 if openFile == false {
                     ARQuickLookView(name: "czech", usdzURL: usdzURL)
                         .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
-
                 }
-                //                } else {
-                //                    ARQuickLookView(name: "czech", usdzURL: usdzURL)
-                //                        .frame(width: Screen.width, height: Screen.height - Screen.height * 0.4)
-                //                }
                 
                 Spacer()
                 
                 VStack(spacing: 0) {
                     HStack {
-                        Button(action: {}, label: {
+                        Button(action: {
+                            
+                        }, label: {
                             MainButton(symbolName: "cube", text: "3D Scan")
                         })
-                        Button(action: {}, label: {
+                        Button(action: {
+                            
+                        }, label: {
                             MainButton(symbolName: "camera", text: "Fotos")
                         })
                         Button(action: {
@@ -64,12 +49,10 @@ struct ContentView: View {
                             MainButton(symbolName: "pencil", text: "Bauplan")
                         })
                         Button(action: {
-                            //                            isPresented = true
                             openFile.toggle()
                         }, label: {
                             VStack {
                                 MainButton(symbolName: "doc.badge.plus", text: "Dateien")
-                                Text("file selected is \(fileName)")
                             }
                         })
                         .fileImporter(isPresented: $openFile, allowedContentTypes: [.usdz]) { res in
@@ -82,18 +65,15 @@ struct ContentView: View {
                                     let resourceDocPath = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last! as URL
                                     let actualPath = resourceDocPath.appendingPathComponent("Kus_\(fileName)")
                                     defer { fileUrl.stopAccessingSecurityScopedResource() }
+                                    
                                     do {
                                         try fileData.write(to: actualPath)
                                         print("usdz successfully saved!")
                                     } catch {
                                         print("usdz could not be saved")
                                     }
+                                    
                                     usdzURL = actualPath
-                                    print("saved url1: \(actualPath.absoluteURL)")
-//                                    print("saved url: \(actualPath.deletingLastPathComponent())")
-//                                    print("saved url: \(actualPath.path)")
-//                                    print("saved url: \(actualPath.standardizedFileURL)")
-//                                    print("saved url6: \(actualPath.relativePath)")
                                 } else {
                                 }
                             } catch{
@@ -132,39 +112,6 @@ struct ContentView: View {
                 }
                 .frame(width: Screen.width, height: Screen.height * 0.4)
                 .background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
-            }
-        }
-    }
-    
-    func savePdf(urlString:String, fileName:String) {
-        DispatchQueue.main.async {
-            let url = URL(string: urlString)
-            let pdfData = try? Data.init(contentsOf: url!)
-            let resourceDocPath = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)).last! as URL
-            let pdfNameFromUrl = "Prototype-\(fileName).pdf"
-            let actualPath = resourceDocPath.appendingPathComponent(pdfNameFromUrl)
-            do {
-                try pdfData?.write(to: actualPath, options: .atomic)
-                print("pdf successfully saved!")
-            } catch {
-                print("Pdf could not be saved")
-            }
-        }
-    }
-    
-    func showSavedPdf(url:String, fileName:String) {
-        if #available(iOS 10.0, *) {
-            do {
-                let docURL = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-                let contents = try FileManager.default.contentsOfDirectory(at: docURL, includingPropertiesForKeys: [.fileResourceTypeKey], options: .skipsHiddenFiles)
-                for url in contents {
-                    if url.description.contains("\(fileName).pdf") {
-                        // its your file! do what you want with it!
-                        
-                    }
-                }
-            } catch {
-                print("could not locate pdf file !!!!!!!")
             }
         }
     }
@@ -211,25 +158,6 @@ struct subText : View {
         .padding(1)
     }
 }
-
-//struct ARViewContainer: UIViewRepresentable {
-//
-//    func makeUIView(context: Context) -> ARView {
-//
-//        let arView = ARView(frame: .zero)
-//
-//        // Load the "Box" scene from the "Experience" Reality File
-//
-//        // Add the box anchor to the scene
-//        arView.scene.anchors.append(boxAnchor)
-//
-//        return arView
-//
-//    }
-//
-//    func updateUIView(_ uiView: ARView, context: Context) {}
-//
-//}
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
