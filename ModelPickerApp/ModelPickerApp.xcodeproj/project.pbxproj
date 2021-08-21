@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3F519526CECC02000AA56E /* test.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A3F519426CECC02000AA56E /* test.usdz */; };
 		5A7183F82629BA41000C9621 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F12629BA40000C9621 /* gramophone.usdz */; };
 		5A7183F92629BA41000C9621 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F22629BA40000C9621 /* toy_biplane.usdz */; };
 		5A7183FB2629BA41000C9621 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A7183F42629BA40000C9621 /* teapot.usdz */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A3F519426CECC02000AA56E /* test.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = test.usdz; sourceTree = "<group>"; };
 		5A7183F12629BA40000C9621 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		5A7183F22629BA40000C9621 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		5A7183F42629BA40000C9621 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				5A7183F12629BA40000C9621 /* gramophone.usdz */,
 				5AA182152677E95C00C49865 /* czech3.usdz */,
 				5A936ADD26738D9600D52F7A /* Becherglas.usdz */,
+				5A3F519426CECC02000AA56E /* test.usdz */,
 				5A7183F42629BA40000C9621 /* teapot.usdz */,
 			);
 			path = Models;
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA877B82672474C005A6A56 /* tv_retro.usdz in Resources */,
+				5A3F519526CECC02000AA56E /* test.usdz in Resources */,
 				5A7183FB2629BA41000C9621 /* teapot.usdz in Resources */,
 				5AEB17A82629B3AC00D39803 /* LaunchScreen.storyboard in Resources */,
 				5A936ADE26738D9600D52F7A /* Becherglas.usdz in Resources */,
