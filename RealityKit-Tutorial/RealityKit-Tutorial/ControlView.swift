@@ -75,6 +75,7 @@ struct ControlButtonBar: View {
             }
             .sheet(isPresented: $showBrowse, content: {
                 // BrowseView
+                BrowseView(showBrowse: $showBrowse)
             })
             
             Spacer()
