@@ -7,37 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A07C50226D437730052F514 /* testtt.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A07C50126D437730052F514 /* testtt.usdz */; };
-		5A07C50526D4451F0052F514 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A07C50426D4451F0052F514 /* PlacementSettings.swift */; };
-		5A07C50726D448F50052F514 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A07C50626D448F50052F514 /* PlacementView.swift */; };
-		5AA3E9DF26D3FDED00E396B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA3E9DE26D3FDED00E396B0 /* Model.swift */; };
-		5AA78F2B26D2D2D100731F4C /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA78F2A26D2D2D100731F4C /* ControlView.swift */; };
-		5AA78F2D26D2FC7700731F4C /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA78F2C26D2FC7700731F4C /* BrowseView.swift */; };
-		5ACCCFC526D19FB300F986AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCCFC426D19FB300F986AC /* AppDelegate.swift */; };
-		5ACCCFC726D19FB300F986AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCCFC626D19FB300F986AC /* ContentView.swift */; };
-		5ACCCFCB26D19FB500F986AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCCFCA26D19FB500F986AC /* Assets.xcassets */; };
-		5ACCCFCE26D19FB500F986AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCCFCD26D19FB500F986AC /* Preview Assets.xcassets */; };
-		5ACCCFD126D19FB500F986AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCCFCF26D19FB500F986AC /* LaunchScreen.storyboard */; };
+		5AE31E0C26D44CE800C6D8CF /* RealityKit_TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE31E0B26D44CE800C6D8CF /* RealityKit_TutorialApp.swift */; };
+		5AE31E1026D44CE900C6D8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE31E0F26D44CE900C6D8CF /* Assets.xcassets */; };
+		5AE31E1326D44CE900C6D8CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE31E1226D44CE900C6D8CF /* Preview Assets.xcassets */; };
+		5AE31E2026D44D0300C6D8CF /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE31E1A26D44D0300C6D8CF /* PlacementSettings.swift */; };
+		5AE31E2126D44D0300C6D8CF /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE31E1B26D44D0300C6D8CF /* PlacementView.swift */; };
+		5AE31E2226D44D0300C6D8CF /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE31E1C26D44D0300C6D8CF /* BrowseView.swift */; };
+		5AE31E2326D44D0300C6D8CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE31E1D26D44D0300C6D8CF /* ContentView.swift */; };
+		5AE31E2426D44D0300C6D8CF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE31E1E26D44D0300C6D8CF /* Model.swift */; };
+		5AE31E2526D44D0300C6D8CF /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE31E1F26D44D0300C6D8CF /* ControlView.swift */; };
+		5AE31E2826D44D1400C6D8CF /* testtt.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5AE31E2726D44D1400C6D8CF /* testtt.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A07C50126D437730052F514 /* testtt.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = testtt.usdz; sourceTree = "<group>"; };
-		5A07C50426D4451F0052F514 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
-		5A07C50626D448F50052F514 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
-		5AA3E9DE26D3FDED00E396B0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		5AA78F2A26D2D2D100731F4C /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
-		5AA78F2C26D2FC7700731F4C /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
-		5ACCCFC126D19FB300F986AC /* RealityKit-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RealityKit-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ACCCFC426D19FB300F986AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5ACCCFC626D19FB300F986AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5ACCCFCA26D19FB500F986AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5ACCCFCD26D19FB500F986AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5ACCCFD026D19FB500F986AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5ACCCFD226D19FB500F986AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE31E0826D44CE800C6D8CF /* RealityKit-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RealityKit-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE31E0B26D44CE800C6D8CF /* RealityKit_TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKit_TutorialApp.swift; sourceTree = "<group>"; };
+		5AE31E0F26D44CE900C6D8CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AE31E1226D44CE900C6D8CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AE31E1426D44CE900C6D8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE31E1A26D44D0300C6D8CF /* PlacementSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
+		5AE31E1B26D44D0300C6D8CF /* PlacementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
+		5AE31E1C26D44D0300C6D8CF /* BrowseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		5AE31E1D26D44D0300C6D8CF /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5AE31E1E26D44D0300C6D8CF /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5AE31E1F26D44D0300C6D8CF /* ControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		5AE31E2726D44D1400C6D8CF /* testtt.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = testtt.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5ACCCFBE26D19FB300F986AC /* Frameworks */ = {
+		5AE31E0526D44CE800C6D8CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,67 +45,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A07C50326D437B80052F514 /* 3D Assets */ = {
+		5AE31DFF26D44CE800C6D8CF = {
 			isa = PBXGroup;
 			children = (
-				5A07C50126D437730052F514 /* testtt.usdz */,
-			);
-			path = "3D Assets";
-			sourceTree = "<group>";
-		};
-		5ACCCFB826D19FB300F986AC = {
-			isa = PBXGroup;
-			children = (
-				5ACCCFC326D19FB300F986AC /* RealityKit-Tutorial */,
-				5ACCCFC226D19FB300F986AC /* Products */,
+				5AE31E0A26D44CE800C6D8CF /* RealityKit-Tutorial */,
+				5AE31E0926D44CE800C6D8CF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5ACCCFC226D19FB300F986AC /* Products */ = {
+		5AE31E0926D44CE800C6D8CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5ACCCFC126D19FB300F986AC /* RealityKit-Tutorial.app */,
+				5AE31E0826D44CE800C6D8CF /* RealityKit-Tutorial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5ACCCFC326D19FB300F986AC /* RealityKit-Tutorial */ = {
+		5AE31E0A26D44CE800C6D8CF /* RealityKit-Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				5ACCCFC426D19FB300F986AC /* AppDelegate.swift */,
-				5ACCCFC626D19FB300F986AC /* ContentView.swift */,
-				5AA78F2A26D2D2D100731F4C /* ControlView.swift */,
-				5AA78F2C26D2FC7700731F4C /* BrowseView.swift */,
-				5A07C50626D448F50052F514 /* PlacementView.swift */,
-				5A07C50426D4451F0052F514 /* PlacementSettings.swift */,
-				5A07C50326D437B80052F514 /* 3D Assets */,
-				5ACCCFCA26D19FB500F986AC /* Assets.xcassets */,
-				5ACCCFCF26D19FB500F986AC /* LaunchScreen.storyboard */,
-				5ACCCFD226D19FB500F986AC /* Info.plist */,
-				5ACCCFCC26D19FB500F986AC /* Preview Content */,
-				5AA3E9DE26D3FDED00E396B0 /* Model.swift */,
+				5AE31E0B26D44CE800C6D8CF /* RealityKit_TutorialApp.swift */,
+				5AE31E1C26D44D0300C6D8CF /* BrowseView.swift */,
+				5AE31E1D26D44D0300C6D8CF /* ContentView.swift */,
+				5AE31E1F26D44D0300C6D8CF /* ControlView.swift */,
+				5AE31E1E26D44D0300C6D8CF /* Model.swift */,
+				5AE31E1A26D44D0300C6D8CF /* PlacementSettings.swift */,
+				5AE31E1B26D44D0300C6D8CF /* PlacementView.swift */,
+				5AE31E2626D44D1400C6D8CF /* 3D Assets */,
+				5AE31E0F26D44CE900C6D8CF /* Assets.xcassets */,
+				5AE31E1426D44CE900C6D8CF /* Info.plist */,
+				5AE31E1126D44CE900C6D8CF /* Preview Content */,
 			);
 			path = "RealityKit-Tutorial";
 			sourceTree = "<group>";
 		};
-		5ACCCFCC26D19FB500F986AC /* Preview Content */ = {
+		5AE31E1126D44CE900C6D8CF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5ACCCFCD26D19FB500F986AC /* Preview Assets.xcassets */,
+				5AE31E1226D44CE900C6D8CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AE31E2626D44D1400C6D8CF /* 3D Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5AE31E2726D44D1400C6D8CF /* testtt.usdz */,
+			);
+			path = "3D Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5ACCCFC026D19FB300F986AC /* RealityKit-Tutorial */ = {
+		5AE31E0726D44CE800C6D8CF /* RealityKit-Tutorial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5ACCCFD526D19FB500F986AC /* Build configuration list for PBXNativeTarget "RealityKit-Tutorial" */;
+			buildConfigurationList = 5AE31E1726D44CE900C6D8CF /* Build configuration list for PBXNativeTarget "RealityKit-Tutorial" */;
 			buildPhases = (
-				5ACCCFBD26D19FB300F986AC /* Sources */,
-				5ACCCFBE26D19FB300F986AC /* Frameworks */,
-				5ACCCFBF26D19FB300F986AC /* Resources */,
+				5AE31E0426D44CE800C6D8CF /* Sources */,
+				5AE31E0526D44CE800C6D8CF /* Frameworks */,
+				5AE31E0626D44CE800C6D8CF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -115,24 +112,24 @@
 			);
 			name = "RealityKit-Tutorial";
 			productName = "RealityKit-Tutorial";
-			productReference = 5ACCCFC126D19FB300F986AC /* RealityKit-Tutorial.app */;
+			productReference = 5AE31E0826D44CE800C6D8CF /* RealityKit-Tutorial.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5ACCCFB926D19FB300F986AC /* Project object */ = {
+		5AE31E0026D44CE800C6D8CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					5ACCCFC026D19FB300F986AC = {
+					5AE31E0726D44CE800C6D8CF = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = 5ACCCFBC26D19FB300F986AC /* Build configuration list for PBXProject "RealityKit-Tutorial" */;
+			buildConfigurationList = 5AE31E0326D44CE800C6D8CF /* Build configuration list for PBXProject "RealityKit-Tutorial" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,60 +137,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 5ACCCFB826D19FB300F986AC;
-			productRefGroup = 5ACCCFC226D19FB300F986AC /* Products */;
+			mainGroup = 5AE31DFF26D44CE800C6D8CF;
+			productRefGroup = 5AE31E0926D44CE800C6D8CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5ACCCFC026D19FB300F986AC /* RealityKit-Tutorial */,
+				5AE31E0726D44CE800C6D8CF /* RealityKit-Tutorial */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5ACCCFBF26D19FB300F986AC /* Resources */ = {
+		5AE31E0626D44CE800C6D8CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A07C50226D437730052F514 /* testtt.usdz in Resources */,
-				5ACCCFD126D19FB500F986AC /* LaunchScreen.storyboard in Resources */,
-				5ACCCFCE26D19FB500F986AC /* Preview Assets.xcassets in Resources */,
-				5ACCCFCB26D19FB500F986AC /* Assets.xcassets in Resources */,
+				5AE31E1326D44CE900C6D8CF /* Preview Assets.xcassets in Resources */,
+				5AE31E1026D44CE900C6D8CF /* Assets.xcassets in Resources */,
+				5AE31E2826D44D1400C6D8CF /* testtt.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5ACCCFBD26D19FB300F986AC /* Sources */ = {
+		5AE31E0426D44CE800C6D8CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A07C50526D4451F0052F514 /* PlacementSettings.swift in Sources */,
-				5AA3E9DF26D3FDED00E396B0 /* Model.swift in Sources */,
-				5AA78F2D26D2FC7700731F4C /* BrowseView.swift in Sources */,
-				5AA78F2B26D2D2D100731F4C /* ControlView.swift in Sources */,
-				5ACCCFC726D19FB300F986AC /* ContentView.swift in Sources */,
-				5ACCCFC526D19FB300F986AC /* AppDelegate.swift in Sources */,
-				5A07C50726D448F50052F514 /* PlacementView.swift in Sources */,
+				5AE31E2226D44D0300C6D8CF /* BrowseView.swift in Sources */,
+				5AE31E2326D44D0300C6D8CF /* ContentView.swift in Sources */,
+				5AE31E2026D44D0300C6D8CF /* PlacementSettings.swift in Sources */,
+				5AE31E2426D44D0300C6D8CF /* Model.swift in Sources */,
+				5AE31E0C26D44CE800C6D8CF /* RealityKit_TutorialApp.swift in Sources */,
+				5AE31E2526D44D0300C6D8CF /* ControlView.swift in Sources */,
+				5AE31E2126D44D0300C6D8CF /* PlacementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		5ACCCFCF26D19FB500F986AC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5ACCCFD026D19FB500F986AC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		5ACCCFD326D19FB500F986AC /* Debug */ = {
+		5AE31E1526D44CE900C6D8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,7 +239,7 @@
 			};
 			name = Debug;
 		};
-		5ACCCFD426D19FB500F986AC /* Release */ = {
+		5AE31E1626D44CE900C6D8CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -309,7 +294,7 @@
 			};
 			name = Release;
 		};
-		5ACCCFD626D19FB500F986AC /* Debug */ = {
+		5AE31E1826D44CE900C6D8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,6 +304,7 @@
 				DEVELOPMENT_TEAM = P87BGS4HZC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "RealityKit-Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +316,7 @@
 			};
 			name = Debug;
 		};
-		5ACCCFD726D19FB500F986AC /* Release */ = {
+		5AE31E1926D44CE900C6D8CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -340,6 +326,7 @@
 				DEVELOPMENT_TEAM = P87BGS4HZC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "RealityKit-Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5ACCCFBC26D19FB300F986AC /* Build configuration list for PBXProject "RealityKit-Tutorial" */ = {
+		5AE31E0326D44CE800C6D8CF /* Build configuration list for PBXProject "RealityKit-Tutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5ACCCFD326D19FB500F986AC /* Debug */,
-				5ACCCFD426D19FB500F986AC /* Release */,
+				5AE31E1526D44CE900C6D8CF /* Debug */,
+				5AE31E1626D44CE900C6D8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5ACCCFD526D19FB500F986AC /* Build configuration list for PBXNativeTarget "RealityKit-Tutorial" */ = {
+		5AE31E1726D44CE900C6D8CF /* Build configuration list for PBXNativeTarget "RealityKit-Tutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5ACCCFD626D19FB500F986AC /* Debug */,
-				5ACCCFD726D19FB500F986AC /* Release */,
+				5AE31E1826D44CE900C6D8CF /* Debug */,
+				5AE31E1926D44CE900C6D8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5ACCCFB926D19FB300F986AC /* Project object */;
+	rootObject = 5AE31E0026D44CE800C6D8CF /* Project object */;
 }
