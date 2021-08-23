@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A07C50226D437730052F514 /* Czech4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A07C50126D437730052F514 /* Czech4.usdz */; };
+		5A07C50226D437730052F514 /* testtt.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A07C50126D437730052F514 /* testtt.usdz */; };
 		5AA3E9DF26D3FDED00E396B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA3E9DE26D3FDED00E396B0 /* Model.swift */; };
 		5AA78F2B26D2D2D100731F4C /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA78F2A26D2D2D100731F4C /* ControlView.swift */; };
 		5AA78F2D26D2FC7700731F4C /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA78F2C26D2FC7700731F4C /* BrowseView.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A07C50126D437730052F514 /* Czech4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Czech4.usdz; sourceTree = "<group>"; };
+		5A07C50126D437730052F514 /* testtt.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = testtt.usdz; sourceTree = "<group>"; };
 		5AA3E9DE26D3FDED00E396B0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		5AA78F2A26D2D2D100731F4C /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		5AA78F2C26D2FC7700731F4C /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		5A07C50326D437B80052F514 /* 3D Assets */ = {
 			isa = PBXGroup;
 			children = (
-				5A07C50126D437730052F514 /* Czech4.usdz */,
+				5A07C50126D437730052F514 /* testtt.usdz */,
 			);
 			path = "3D Assets";
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A07C50226D437730052F514 /* Czech4.usdz in Resources */,
+				5A07C50226D437730052F514 /* testtt.usdz in Resources */,
 				5ACCCFD126D19FB500F986AC /* LaunchScreen.storyboard in Resources */,
 				5ACCCFCE26D19FB500F986AC /* Preview Assets.xcassets in Resources */,
 				5ACCCFCB26D19FB500F986AC /* Assets.xcassets in Resources */,
