@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A9DF89926D52FBB002FFF23 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 5A9DF89826D52FBB002FFF23 /* FocusEntity */; };
+		5A9DF89B26D52FDD002FFF23 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DF89A26D52FDD002FFF23 /* CustomARView.swift */; };
 		5AE31E0C26D44CE800C6D8CF /* RealityKit_TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE31E0B26D44CE800C6D8CF /* RealityKit_TutorialApp.swift */; };
 		5AE31E1026D44CE900C6D8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE31E0F26D44CE900C6D8CF /* Assets.xcassets */; };
 		5AE31E1326D44CE900C6D8CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE31E1226D44CE900C6D8CF /* Preview Assets.xcassets */; };
@@ -20,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A9DF89A26D52FDD002FFF23 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		5AE31E0826D44CE800C6D8CF /* RealityKit-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RealityKit-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE31E0B26D44CE800C6D8CF /* RealityKit_TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKit_TutorialApp.swift; sourceTree = "<group>"; };
 		5AE31E0F26D44CE900C6D8CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9DF89926D52FBB002FFF23 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,7 @@
 				5AE31E1E26D44D0300C6D8CF /* Model.swift */,
 				5AE31E1A26D44D0300C6D8CF /* PlacementSettings.swift */,
 				5AE31E1B26D44D0300C6D8CF /* PlacementView.swift */,
+				5A9DF89A26D52FDD002FFF23 /* CustomARView.swift */,
 				5AE31E2626D44D1400C6D8CF /* 3D Assets */,
 				5AE31E0F26D44CE900C6D8CF /* Assets.xcassets */,
 				5AE31E1426D44CE900C6D8CF /* Info.plist */,
@@ -111,6 +116,9 @@
 			dependencies = (
 			);
 			name = "RealityKit-Tutorial";
+			packageProductDependencies = (
+				5A9DF89826D52FBB002FFF23 /* FocusEntity */,
+			);
 			productName = "RealityKit-Tutorial";
 			productReference = 5AE31E0826D44CE800C6D8CF /* RealityKit-Tutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 5AE31DFF26D44CE800C6D8CF;
+			packageReferences = (
+				5A9DF89726D52FBB002FFF23 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 5AE31E0926D44CE800C6D8CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,6 +182,7 @@
 				5AE31E2426D44D0300C6D8CF /* Model.swift in Sources */,
 				5AE31E0C26D44CE800C6D8CF /* RealityKit_TutorialApp.swift in Sources */,
 				5AE31E2526D44D0300C6D8CF /* ControlView.swift in Sources */,
+				5A9DF89B26D52FDD002FFF23 /* CustomARView.swift in Sources */,
 				5AE31E2126D44D0300C6D8CF /* PlacementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A9DF89726D52FBB002FFF23 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A9DF89826D52FBB002FFF23 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A9DF89726D52FBB002FFF23 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AE31E0026D44CE800C6D8CF /* Project object */;
 }
