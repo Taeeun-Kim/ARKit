@@ -50,6 +50,7 @@ class Model {
     
     func asyncLoadModelEntity() {
         let filename = self.name + ".usdz"
+        print(filename)
         
         self.cancellable = ModelEntity.loadModelAsync(named: filename)
             .sink { loadCompletion in

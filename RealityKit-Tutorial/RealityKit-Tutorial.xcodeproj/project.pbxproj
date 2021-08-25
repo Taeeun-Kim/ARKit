@@ -76,6 +76,7 @@
 				5AE31E1A26D44D0300C6D8CF /* PlacementSettings.swift */,
 				5AE31E1B26D44D0300C6D8CF /* PlacementView.swift */,
 				5A9DF89A26D52FDD002FFF23 /* CustomARView.swift */,
+				5AE31E2726D44D1400C6D8CF /* testtt.usdz */,
 				5AE31E2626D44D1400C6D8CF /* 3D Assets */,
 				5AE31E0F26D44CE900C6D8CF /* Assets.xcassets */,
 				5AE31E1426D44CE900C6D8CF /* Info.plist */,
@@ -95,7 +96,6 @@
 		5AE31E2626D44D1400C6D8CF /* 3D Assets */ = {
 			isa = PBXGroup;
 			children = (
-				5AE31E2726D44D1400C6D8CF /* testtt.usdz */,
 			);
 			path = "3D Assets";
 			sourceTree = "<group>";
